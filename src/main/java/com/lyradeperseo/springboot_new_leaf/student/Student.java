@@ -1,7 +1,8 @@
 package com.lyradeperseo.springboot_new_leaf.student;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -38,6 +39,5 @@ public class Student {
     public Integer getAge() {
         return Period.between(this.dob, LocalDate.now()).getYears();
     }
-
 }
 
