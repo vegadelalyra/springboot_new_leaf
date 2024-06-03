@@ -1,6 +1,5 @@
 package com.lyradeperseo.springboot_new_leaf.student;
 
-import lombok.AllArgsConstructor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +13,6 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.Optional;
 
-@AllArgsConstructor
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = Replace.NONE)
 class StudentRepositoryTest {
